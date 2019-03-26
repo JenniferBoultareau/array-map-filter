@@ -24,6 +24,11 @@ Sortie attendue:
  */
 
 function keepStarks(names) {
+  const starkFamily = names.filter(function(item){
+    return item.endsWith('Stark');
+
+  });
+  return starkFamily;
 }
 
 // Ne pas modifier l'export

@@ -29,6 +29,12 @@ Sortie attendue:
  */
 
 function filterOnPrice(products, maxPrice) {
+  const phones = products.filter(function(product){
+      return product.price <= maxPrice
+    
+    
+  });
+  return phones
 }
 
 // Ne pas modifier l'export

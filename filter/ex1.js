@@ -10,9 +10,18 @@ Sortie attendue:
   [7, 2, 0, 3, 11]
 
  */
-
 function getPositiveNumbers(numbers) {
+  const positive = numbers.filter(function(num){
+    return num >=0;
+  });
+  return positive;
 }
+
+  
+
+
+  
+// filtre vaut [12, 130, 44]
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
 // mais alors, il faut alors lancer l'exercice avec node filter/ex1

@@ -51,6 +51,18 @@ Sortie attendue:
 */
 
 function getStudentsPerCurriculum(campuses, curriculumName) {
+  const cities = campuses
+  .filter(function(langage){
+      if (!langage.curriculums.includes(curriculumName)){
+      return langage;
+      } 
+  })
+  .map(function(town){
+    return {
+      city: town.curriculums.numStudents
+    }
+  });
+  return cities
 }
 
 module.exports = getStudentsPerCurriculum;
